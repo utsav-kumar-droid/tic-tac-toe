@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1> TIC TAC TOE</h1>
+        <p id="ins">
+            Game starts by just Tap on box <br><br>First Player starts as <b> Player X </b>And Second Player as <b>Player 0</b>
+        </p>
+        <br><br>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="myfunc_3(); myfunc();" readonly>
+                <input type="text" id="b2" class="cell" onclick="myfunc_4(); myfunc();" readonly>
+                <input type="text" id="b3" class="cell" onclick="myfunc_5(); myfunc();" readonly>
+            </div>
+                <div class="row">
+                    <input type="text" id="b4" class="cell" onclick="myfunc_6(); myfunc();" readonly>
+                    <input type="text" id="b5" class="cell" onclick="myfunc_7(); myfunc();" readonly>
+                    <input type="text" id="b6" class="cell" onclick="myfunc_8(); myfunc();" readonly>
+                </div>
+                    <div class="row">
+                        <input type="text" id="b7" class="cell" onclick="myfunc_9(); myfunc();" readonly>
+                        <input type="text" id="b8" class="cell" onclick="myfunc_10(); myfunc();" readonly>
+                        <input type="text" id="b9" class="cell" onclick="myfunc_11(); myfunc();" readonly>
+                    </div>                  
+        </div>
+        <br><br><br>
+        <button id="but" onclick="myfunc_2()">
+            RESET
+        </button>
+        <br><br>
+        <p id="print"></p>
+
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCK7Jij51nJAyx2OJw3YRyZWCFa19gX9Ms",
+          authDomain: "tic-toc-toe-3c719.firebaseapp.com",
+          projectId: "tic-toc-toe-3c719",
+          storageBucket: "tic-toc-toe-3c719.appspot.com",
+          messagingSenderId: "46060783674",
+          appId: "1:46060783674:web:8ca49b2a605d7c9ce34d03",
+          measurementId: "G-CTMNXV6N3B"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script> 
+    
+</body>
+
+</html>
